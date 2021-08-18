@@ -18,5 +18,13 @@ pipeline {
       }
     }
 
+    stage('Push Docker Image') {
+      steps {
+        sh '''#docker login
+#docker tag nodehello:$BUILD_ID dockerbhd/node-hello:$BUILD_ID
+#&& docker push dockerbhd/node-hello:$BUILD_ID'''
+      }
+    }
+
   }
 }
