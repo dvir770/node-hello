@@ -1,4 +1,4 @@
-From node
+FROM node
 MAINTAINER Dvir
 
 WORKDIR /var/app 
